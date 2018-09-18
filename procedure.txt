@@ -1,0 +1,25 @@
+                                                            STAR UML 
+Downloading procedure:
+Step 1: click link to download star UML or download the file StarUML-v2.0.2-64-bit.deb
+I downloaded StarUML from http://staruml.io/download/release/v2.0.2/StarUML-v2.0.2-64-bit.deb
+Step 2:
+open terminal and run following
+$ dpkg -i StarUML-v2.0.2-64-bit.deb
+I got this message:
+Unpacking staruml (2.0.2) ...
+dpkg: dependency problems prevent configuration of staruml:
+staruml depends on libgcrypt11 (>= 1.4.5); however:
+Package libgcrypt11 is not installed.
+
+dpkg: error processing package staruml (--install):
+dependency problems - leaving unconfigured
+Processing triggers for hicolor-icon-theme (0.15-0ubuntu1) ...
+Errors were encountered while processing:
+staruml
+step3:
+You can download and install the libgcrypt11 package from Precise and Trust Ubuntu repositories, for example: https://launchpad.net/ubuntu/+archive/primary/+files/libgcrypt11_1.5.3-2ubuntu4.2_amd64.deb
+sudo dpkg -i libgcrypt11_1.5.3-2ubuntu4.2_amd64.deb
+sudo dpkg -i StarUML-v2.8.0-64-bit.deb
+step4: now run following command in terminal
+sudo apt-get install ./StarUML-v2.0.2-64-bit.deb
+
